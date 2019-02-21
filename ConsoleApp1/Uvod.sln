@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{31F30331-D9D7-4529-9C4C-B096F2654F21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uvodni", "ConsoleApp1\Uvodni.csproj", "{31F30331-D9D7-4529-9C4C-B096F2654F21}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zbroj", "Zbroj\Zbroj.csproj", "{16DC916F-8D5B-491A-9732-C87EBABA0DB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1_Uvod", "4.1_Uvod", "{E1B23A10-0D0C-443B-ABEF-C286F1183DC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{A5578C90-030A-4546-BC38-D35F8B6A10AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ispis brojeva", "Ispis brojeva\Ispis brojeva.csproj", "{FCC34C2A-27C6-4172-B677-DDAC7C73139A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ispis ledišta i vrelišta vode", "Ispis ledišta i vrelišta vode\Ispis ledišta i vrelišta vode.csproj", "{40126194-2D84-4257-8C31-1330623C0157}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +29,25 @@ Global
 		{16DC916F-8D5B-491A-9732-C87EBABA0DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16DC916F-8D5B-491A-9732-C87EBABA0DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16DC916F-8D5B-491A-9732-C87EBABA0DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5578C90-030A-4546-BC38-D35F8B6A10AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5578C90-030A-4546-BC38-D35F8B6A10AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5578C90-030A-4546-BC38-D35F8B6A10AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5578C90-030A-4546-BC38-D35F8B6A10AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC34C2A-27C6-4172-B677-DDAC7C73139A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC34C2A-27C6-4172-B677-DDAC7C73139A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC34C2A-27C6-4172-B677-DDAC7C73139A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC34C2A-27C6-4172-B677-DDAC7C73139A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40126194-2D84-4257-8C31-1330623C0157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40126194-2D84-4257-8C31-1330623C0157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40126194-2D84-4257-8C31-1330623C0157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40126194-2D84-4257-8C31-1330623C0157}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A5578C90-030A-4546-BC38-D35F8B6A10AA} = {E1B23A10-0D0C-443B-ABEF-C286F1183DC7}
+		{FCC34C2A-27C6-4172-B677-DDAC7C73139A} = {E1B23A10-0D0C-443B-ABEF-C286F1183DC7}
+		{40126194-2D84-4257-8C31-1330623C0157} = {E1B23A10-0D0C-443B-ABEF-C286F1183DC7}
 	EndGlobalSection
 EndGlobal
