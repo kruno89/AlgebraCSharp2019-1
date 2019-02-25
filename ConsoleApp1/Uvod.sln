@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2_uvjetno_grananje", "5.2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prirucnik", "Prirucnik\Prirucnik.csproj", "{C6506E57-CDB6-441B-A8C2-2C0D707B875A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer_5.2.1.2_pozitivan", "primjer_5.2.1.2_pozitivan\primjer_5.2.1.2_pozitivan.csproj", "{7137DA15-4DFA-4A19-B239-FE7FA6513E28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{C6506E57-CDB6-441B-A8C2-2C0D707B875A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6506E57-CDB6-441B-A8C2-2C0D707B875A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6506E57-CDB6-441B-A8C2-2C0D707B875A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7137DA15-4DFA-4A19-B239-FE7FA6513E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7137DA15-4DFA-4A19-B239-FE7FA6513E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7137DA15-4DFA-4A19-B239-FE7FA6513E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7137DA15-4DFA-4A19-B239-FE7FA6513E28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,5 +73,6 @@ Global
 		{40126194-2D84-4257-8C31-1330623C0157} = {E1B23A10-0D0C-443B-ABEF-C286F1183DC7}
 		{F0D62BEC-9073-47F3-8AD1-23B6D9634345} = {1B530489-3238-4513-BB74-6053605788FB}
 		{C6506E57-CDB6-441B-A8C2-2C0D707B875A} = {5E72E68F-4BC2-4DBA-B701-49E17262E46B}
+		{7137DA15-4DFA-4A19-B239-FE7FA6513E28} = {5E72E68F-4BC2-4DBA-B701-49E17262E46B}
 	EndGlobalSection
 EndGlobal
