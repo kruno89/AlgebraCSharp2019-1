@@ -31,8 +31,8 @@ namespace zbroj_razlika
 
             Console.WriteLine("Umnožak: {0}, Kvocijent {1}", c*d, (float)c/(float)d);
             Console.WriteLine("Pritisnite neku tipku za kraj...");
-            
 
+            
 
 
 
