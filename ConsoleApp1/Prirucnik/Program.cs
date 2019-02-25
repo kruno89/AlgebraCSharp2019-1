@@ -13,7 +13,7 @@ namespace Prirucnik
             Console.Write("Unesite prirodan broj:");
             int a = int.Parse(Console.ReadLine());
             if (a > 10)
-
+                 
 
             {
                 Console.Write("Uneseni broj je veći od 10.");
