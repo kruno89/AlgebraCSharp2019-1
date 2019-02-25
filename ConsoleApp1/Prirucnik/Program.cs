@@ -14,7 +14,7 @@ namespace Prirucnik
             int a = int.Parse(Console.ReadLine());
             if (a > 10)
                  
-
+  
             {
                 Console.Write("Uneseni broj je veći od 10.");
             }
