@@ -49,6 +49,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2.4_znamenkasti_broj", "5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.4.znamenkasti_broj", "5.2.4.znamenkasti_broj\5.2.4.znamenkasti_broj.csproj", "{9F3BB79E-F6E3-4F5F-AE54-A00F4323ED7A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2.5_u_intervalu", "5.2.5_u_intervalu", "{3F756223-CE05-4793-9F5E-784729974204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.5.u.intervalu", "5.2.5.u.intervalu\5.2.5.u.intervalu.csproj", "{BCBBFF15-010A-4A13-9A4B-E2B1DD371A9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +119,10 @@ Global
 		{9F3BB79E-F6E3-4F5F-AE54-A00F4323ED7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F3BB79E-F6E3-4F5F-AE54-A00F4323ED7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F3BB79E-F6E3-4F5F-AE54-A00F4323ED7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCBBFF15-010A-4A13-9A4B-E2B1DD371A9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBBFF15-010A-4A13-9A4B-E2B1DD371A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCBBFF15-010A-4A13-9A4B-E2B1DD371A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBBFF15-010A-4A13-9A4B-E2B1DD371A9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,5 +141,6 @@ Global
 		{F9A97511-C365-4813-A171-4AA392E5606C} = {491F847D-2BA6-4B72-B989-6990D6120843}
 		{54DCEC88-DB07-44F8-8FC7-CE6B8289D515} = {3FAC7B04-7FDF-48D3-9FFC-4DBACD27DA57}
 		{9F3BB79E-F6E3-4F5F-AE54-A00F4323ED7A} = {5F2A1AA7-5A1D-4E02-8445-576DDC56CBF3}
+		{BCBBFF15-010A-4A13-9A4B-E2B1DD371A9E} = {3F756223-CE05-4793-9F5E-784729974204}
 	EndGlobalSection
 EndGlobal

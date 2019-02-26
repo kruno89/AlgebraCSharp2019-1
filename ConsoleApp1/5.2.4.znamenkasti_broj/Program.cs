@@ -24,7 +24,7 @@ namespace _5._2._4.znamenkasti_broj
             else if (a < 100)
             {
                 Console.WriteLine("Uneseni broj je dvoznamenkast.");
-
+                  
             }
             else if (a < 1000)
             {
