@@ -23,6 +23,10 @@ namespace _5._2._9_paran_neparan_i_djeljiv_s_3
                     Console.Write("Broj je paran.");
 
                 }
+                else
+                {
+                    Console.Write("Broj je neparan.");
+                }
                 if (a % 3 == 0)
                 {
                     Console.WriteLine("Broj je djeljiv s 3");
