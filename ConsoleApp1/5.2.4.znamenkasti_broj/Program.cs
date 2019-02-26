@@ -19,7 +19,7 @@ namespace _5._2._4.znamenkasti_broj
             if (a < 10)
             {
                 Console.WriteLine("Uneseni broj je jednoznamenkast.");
-
+                  
             }
             else if (a < 100)
             {
