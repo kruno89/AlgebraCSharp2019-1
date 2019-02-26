@@ -89,6 +89,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zadatak_5.3.1.", "zadatak_5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neparni_brojevi_do_20", "neparni_brojevi_do_20\neparni_brojevi_do_20.csproj", "{514BE679-9BA4-46A3-9704-92C1289B2660}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "suma_prvih_100", "suma_prvih_100\suma_prvih_100.csproj", "{CD2672BC-FCFC-4A79-BCA6-E94B1818F636}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{514BE679-9BA4-46A3-9704-92C1289B2660}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{514BE679-9BA4-46A3-9704-92C1289B2660}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{514BE679-9BA4-46A3-9704-92C1289B2660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD2672BC-FCFC-4A79-BCA6-E94B1818F636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD2672BC-FCFC-4A79-BCA6-E94B1818F636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD2672BC-FCFC-4A79-BCA6-E94B1818F636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD2672BC-FCFC-4A79-BCA6-E94B1818F636}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -223,5 +229,6 @@ Global
 		{F39CB966-6361-4C4A-83B1-99A28DF1454A} = {A7883B80-0771-44A4-9025-8DCC3B855238}
 		{F9BF279C-4005-4AE2-8438-2FE9EBEB9B5C} = {5463EB23-D70D-4C1F-BF2B-FE09EBD16817}
 		{514BE679-9BA4-46A3-9704-92C1289B2660} = {15043EA4-7108-4F54-AF7D-BCFDF4E8B111}
+		{CD2672BC-FCFC-4A79-BCA6-E94B1818F636} = {15043EA4-7108-4F54-AF7D-BCFDF4E8B111}
 	EndGlobalSection
 EndGlobal
