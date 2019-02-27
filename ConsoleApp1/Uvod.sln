@@ -59,7 +59,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2.6.dobar_broj_1", "5.2.6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2.7_dobar_broj_2", "5.2.7_dobar_broj_2", "{A6D464A9-A5E9-4D9A-842F-DC18B9FDB1B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dobar_broj_2_5.2.7", "dobar_broj_2_5.2.7.\dobar_broj_2_5.2.7.csproj", "{F389D4A7-9205-4661-AF56-4206D8B56360}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dobar_broj_2_5.2.7", "dobar_broj_2_5.2.7\dobar_broj_2_5.2.7.csproj", "{F389D4A7-9205-4661-AF56-4206D8B56360}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2.8_godina_prijestupna", "5.2.8_godina_prijestupna", "{01301B3B-2D8A-4B10-AC01-75DA675FE5EB}"
 EndProject
@@ -79,7 +79,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "primjer_5.3.1.1", "primjer_
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.3.1.3. prirucnik", "5.3.1.3. prirucnik", "{A7883B80-0771-44A4-9025-8DCC3B855238}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prirucnik_5.3.1.3", "prirucnik_5.3.1.3.\prirucnik_5.3.1.3.csproj", "{F39CB966-6361-4C4A-83B1-99A28DF1454A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prirucnik_5.3.1.3", "prirucnik_5.3.1.3\prirucnik_5.3.1.3.csproj", "{F39CB966-6361-4C4A-83B1-99A28DF1454A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "primjeri petlja_while", "primjeri petlja_while", "{5463EB23-D70D-4C1F-BF2B-FE09EBD16817}"
 EndProject
@@ -90,6 +90,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "neparni_brojevi_do_20", "neparni_brojevi_do_20\neparni_brojevi_do_20.csproj", "{514BE679-9BA4-46A3-9704-92C1289B2660}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "suma_prvih_100", "suma_prvih_100\suma_prvih_100.csproj", "{CD2672BC-FCFC-4A79-BCA6-E94B1818F636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.3.4_faktorijel", "5.3.4_faktorijel\5.3.4_faktorijel.csproj", "{B67544FE-0CCE-4F18-ACF3-4F89880C742C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,10 @@ Global
 		{CD2672BC-FCFC-4A79-BCA6-E94B1818F636}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD2672BC-FCFC-4A79-BCA6-E94B1818F636}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD2672BC-FCFC-4A79-BCA6-E94B1818F636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B67544FE-0CCE-4F18-ACF3-4F89880C742C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B67544FE-0CCE-4F18-ACF3-4F89880C742C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B67544FE-0CCE-4F18-ACF3-4F89880C742C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B67544FE-0CCE-4F18-ACF3-4F89880C742C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -230,5 +236,6 @@ Global
 		{F9BF279C-4005-4AE2-8438-2FE9EBEB9B5C} = {5463EB23-D70D-4C1F-BF2B-FE09EBD16817}
 		{514BE679-9BA4-46A3-9704-92C1289B2660} = {15043EA4-7108-4F54-AF7D-BCFDF4E8B111}
 		{CD2672BC-FCFC-4A79-BCA6-E94B1818F636} = {15043EA4-7108-4F54-AF7D-BCFDF4E8B111}
+		{B67544FE-0CCE-4F18-ACF3-4F89880C742C} = {4A257C26-144A-4D7D-A305-0B4CC84C4E49}
 	EndGlobalSection
 EndGlobal
