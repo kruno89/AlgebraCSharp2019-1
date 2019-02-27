@@ -16,6 +16,8 @@ namespace suma_prvih_100
             {
                 Console.Write("{0} ", suma += i);
 
+
+
             }
             Console.ReadLine();
         }
