@@ -10,29 +10,40 @@ namespace _5._3._10_savrsen_nesavrsen_broj
     {
         static void Main(string[] args)
         {
-            Console.Write("Unesite prirodan broj: ");
-            int a = int.Parse(Console.ReadLine());
-            int zbrojDjelitelja = 0;
-            for (int i = 1; i < a; i++)
+            try
             {
-                if (a % i == 0)
+                Console.Write("Unesite prirodan broj: ");
+                int a = int.Parse(Console.ReadLine());
+                int zbrojDjelitelja = 0;
+                for (int i = 1; i < a; i++)
                 {
-                    zbrojDjelitelja += i;
+                    if (a % i == 0)
+                    {
+                        zbrojDjelitelja += i;
+                    }
+
                 }
 
+                if (a == zbrojDjelitelja)
+                {
+                    Console.WriteLine("Uneseni broj je SAVRŠEN.");
+                }
+                else
+                {
+                    Console.WriteLine("Uneseni broj je NESAVRSEN.");
+                }
             }
-
-            if (a == zbrojDjelitelja)
+            catch (Exception ex)
             {
-                Console.WriteLine("Uneseni broj je SAVRŠEN.");
+                Console.WriteLine("Dogodila se greška u programu!");
+                Console.WriteLine("Nisi unio broj: " + ex.Message);
             }
-            else
+            finally
             {
-                Console.WriteLine("Uneseni broj je NESAVRSEN.");
+                Console.ReadKey();
             }
-
-            Console.ReadKey();
-
+                
+            
         }
     }
 }

@@ -10,6 +10,8 @@ namespace _5._3._12_prosjek_suma
     {
         static void Main(string[] args)
         {
+            try
+            {          
             int zbroj = 0;
             float prosjek;
 
@@ -21,7 +23,17 @@ namespace _5._3._12_prosjek_suma
             prosjek = (float) zbroj / 5;
 
             Console.Write("Zbroj = {0} \nProsjek = {1}", zbroj, prosjek);
-            Console.ReadKey();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Dogodila se greška u programu!");
+                Console.WriteLine("Nisi unio prirodni broj: " + ex.Message);
+            }
+            finally
+            {
+                Console.ReadKey();
+            }
+            
         }
     }
 }
