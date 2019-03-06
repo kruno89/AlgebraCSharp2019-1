@@ -31,45 +31,23 @@ namespace _8._1._2_primjer_prirucnik
             //Poziv metode objekta
             Console.WriteLine("Prosjek je " +
                         ucenik1.Prosjek() + ".");
+
             //2. objekt instanciran je pomoću 2.konstruktora
             Ucenik ucenik2 = new Ucenik("Marko", "Marković");
-            Console.WriteLine(ucenik2.Prezime + " " + ucenik2.Ime);
+            Console.WriteLine(ucenik1.Ime + " i " + ucenik2.Ime);
 
+            //može i ovako // List<Ucenik> ucenici = new List<Ucenik>();
+            List<Ucenik> ucenici = new List<Ucenik> { ucenik1, ucenik2 };
+            ucenici.Add(ucenik1);
+            ucenici.Add(ucenik2);
+
+            foreach (var item in ucenici)
+            {
+                Console.WriteLine(item);
+            }
+            
             Console.ReadKey();
         }
     }
 
-    class Ucenik
-    {
-        //Polja klase
-        public DateTime DatumNastanka;
-        public string Ime = "";
-        public string Prezime = "";
-        public int OcjenaIzMatematike = 0;
-        public int OcjenaIzEngleskog = 0;
-        public int OcjenaIzBiologije = 0;
-
-        //Konstruktor1
-        public Ucenik()
-        {
-            DatumNastanka = DateTime.Now;
-        }
-        //Konstruktor2
-        public Ucenik(string ime, string prezime)
-        {
-            Ime = ime;
-            Prezime = prezime;
-        }
-
-        //Ostale metode
-        public double Prosjek()
-        {
-            return
-                (double)
-                (OcjenaIzMatematike
-                + OcjenaIzBiologije
-                + OcjenaIzEngleskog)
-                / 3;
-        }
-    }
 }
