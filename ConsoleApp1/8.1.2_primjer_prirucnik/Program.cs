@@ -17,8 +17,21 @@ namespace _8._1._2_primjer_prirucnik
             Console.WriteLine(Nastavnik.Koeficijent());
 
             Nastavnik n1 = new Nastavnik();
-            
-            
+            // ne može postaviti READ ONLY property
+            // n1.Ime = "Claudije";
+
+            // ispis može
+            Console.WriteLine("Njegovo ime je " + n1.Ime);
+
+            // OIB možemo postaviti 
+            n1.Oib = 12345;
+
+            // Ne dozvoljava čitanje oiba
+            // Console.WriteLine("Njegov OIB je " + n1.Oib);
+
+
+            // Ispiši dio oiba
+            Console.WriteLine("Njegov OIB je " + n1.PartialOib + "*********");
             
             
             
