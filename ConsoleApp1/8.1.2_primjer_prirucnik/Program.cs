@@ -26,6 +26,8 @@ namespace _8._1._2_primjer_prirucnik
             // OIB možemo postaviti 
             n1.Oib = 12345;
 
+            
+
             // Ne dozvoljava čitanje oiba
             // Console.WriteLine("Njegov OIB je " + n1.Oib);
 
@@ -71,7 +73,16 @@ namespace _8._1._2_primjer_prirucnik
             {
                 Console.WriteLine(item);
             }
-            
+
+            Console.WriteLine("\nNastavnici");
+
+            List<Nastavnik> nastavnici = new List<Nastavnik> ();
+            nastavnici.Add(n1);
+            foreach (var item in nastavnici)
+            {
+                Console.WriteLine(item);
+            }
+
             Console.ReadKey();
         }
     }
