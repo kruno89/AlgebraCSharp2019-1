@@ -10,11 +10,17 @@ namespace _8._1._2_primjer_prirucnik
     {
         //Polja klase
         public DateTime DatumNastanka;
-        public string Ime = "";
+        private string ime = "";
         public string Prezime = "";
         public int OcjenaIzMatematike = 0;
         public int OcjenaIzEngleskog = 0;
         public int OcjenaIzBiologije = 0;
+
+        public string Ime
+        {
+            get => ime;
+            set => ime = ToUpper.FirstCharToUpper(value);
+        }
 
 
         //Konstruktor1
