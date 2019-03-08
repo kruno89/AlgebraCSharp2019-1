@@ -199,6 +199,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.1_static", "8.2.1_stati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.2_static_i_instanca", "8.2.2_static_i_instanca\8.2.2_static_i_instanca.csproj", "{029B1972-5869-4879-BCB6-1F785CA4A52C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.2.2.1_primjer_prirucnik", "8.2.2.1_primjer_prirucnik\8.2.2.1_primjer_prirucnik.csproj", "{28BF986B-2F23-4605-8D2B-31F011EA9C97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -497,6 +499,10 @@ Global
 		{029B1972-5869-4879-BCB6-1F785CA4A52C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{029B1972-5869-4879-BCB6-1F785CA4A52C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{029B1972-5869-4879-BCB6-1F785CA4A52C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28BF986B-2F23-4605-8D2B-31F011EA9C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BF986B-2F23-4605-8D2B-31F011EA9C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BF986B-2F23-4605-8D2B-31F011EA9C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BF986B-2F23-4605-8D2B-31F011EA9C97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -593,6 +599,7 @@ Global
 		{9BF40F7A-7C8B-4071-9C66-C989135C51F0} = {452B52FB-DAB6-45C5-A481-0218AA8A7B4C}
 		{345698D8-7A7B-4611-B343-32631F267176} = {452B52FB-DAB6-45C5-A481-0218AA8A7B4C}
 		{029B1972-5869-4879-BCB6-1F785CA4A52C} = {452B52FB-DAB6-45C5-A481-0218AA8A7B4C}
+		{28BF986B-2F23-4605-8D2B-31F011EA9C97} = {540F547E-A6BB-46BA-92D6-447407C5B63B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B163E5F9-5CF0-4F99-B1B3-40667FD4A95F}
