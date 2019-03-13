@@ -211,9 +211,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primjer_BusinessLayer", "Primjer_BusinessLayer\Primjer_BusinessLayer.csproj", "{57016A34-0A27-4C25-A641-7E41B0D88861}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8.5._dogadjaji_primjer_prirucnik", "8.5._dogadjaji_primjer_prirucnik", "{8AAFD612-99EF-4D0E-A246-744C33DDD650}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8.5._Dogadjaji", "8.5._Dogadjaji", "{8AAFD612-99EF-4D0E-A246-744C33DDD650}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.5.1_dogadjaji", "8.5.1_dogadjaji\8.5.1_dogadjaji.csproj", "{CC0DDEF2-7D78-4BFE-81B9-80A17F488A5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9.1_Rad_s_Tekstom", "9.1_Rad_s_Tekstom", "{83802964-552F-4645-9898-919D55CAE17F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.1.1_17_manipulacija", "9.1.1_17_manipulacija\9.1.1_17_manipulacija.csproj", "{EF7959B9-14DC-4D37-A436-D8DEA74FE811}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -537,6 +541,10 @@ Global
 		{CC0DDEF2-7D78-4BFE-81B9-80A17F488A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC0DDEF2-7D78-4BFE-81B9-80A17F488A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC0DDEF2-7D78-4BFE-81B9-80A17F488A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF7959B9-14DC-4D37-A436-D8DEA74FE811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF7959B9-14DC-4D37-A436-D8DEA74FE811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF7959B9-14DC-4D37-A436-D8DEA74FE811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF7959B9-14DC-4D37-A436-D8DEA74FE811}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -641,6 +649,7 @@ Global
 		{57016A34-0A27-4C25-A641-7E41B0D88861} = {540F547E-A6BB-46BA-92D6-447407C5B63B}
 		{8AAFD612-99EF-4D0E-A246-744C33DDD650} = {540F547E-A6BB-46BA-92D6-447407C5B63B}
 		{CC0DDEF2-7D78-4BFE-81B9-80A17F488A5A} = {8AAFD612-99EF-4D0E-A246-744C33DDD650}
+		{EF7959B9-14DC-4D37-A436-D8DEA74FE811} = {83802964-552F-4645-9898-919D55CAE17F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B163E5F9-5CF0-4F99-B1B3-40667FD4A95F}
