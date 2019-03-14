@@ -51,7 +51,7 @@ namespace _10._1._2_zbirka_3_do_7
                 sr.Close();
                 fs1.Close();
 
-                fs1 = new FileStream("3or7uNoviRed.txt", FileMode.Open);
+                fs1 = new FileStream("3or7SaZarezima.txt", FileMode.Open);
                 sr = new StreamReader(fs1);
                 s = sr.ReadToEnd();
                 Console.WriteLine(s);
