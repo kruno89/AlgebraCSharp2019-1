@@ -28,7 +28,7 @@ namespace _10._1._2_zbirka_3_do_7
                 if (i % 3 == 0 || i % 7 == 0)
                 {
                     sw1.WriteLine(i);
-                    sw2.WriteLine("{0}, ", i);
+                    sw2.Write("{0}, ", i);
                 }
             }
 
