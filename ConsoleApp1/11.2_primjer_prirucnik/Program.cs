@@ -52,6 +52,7 @@ namespace _11._2_primjer_prirucnik
 
 
                 //Console.WriteLine("Nasao sam osobu " + trazenaOsoba.Ime + " " + trazenaOsoba.prezime);
+                // nešto za push(zanemari poruku)
             }
             catch(InvalidOperationException ioe)
             {
