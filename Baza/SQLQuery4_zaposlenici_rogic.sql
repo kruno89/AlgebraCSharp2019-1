@@ -1,0 +1,143 @@
+USE [master]
+GO
+/****** Object:  Database [zaposlenici]    Script Date: 20.3.2019. 11:55:58 ******/
+CREATE DATABASE [zaposlenici]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'zaposlenici', FILENAME = N'D:\Code\AlgebraCSharp2019-1\Baza\zaposlenici.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'zaposlenici_log', FILENAME = N'D:\Code\AlgebraCSharp2019-1\Baza\zaposlenici_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+GO
+ALTER DATABASE [zaposlenici] SET COMPATIBILITY_LEVEL = 140
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [zaposlenici].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [zaposlenici] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [zaposlenici] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [zaposlenici] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [zaposlenici] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [zaposlenici] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [zaposlenici] SET AUTO_CLOSE OFF 
+GO
+ALTER DATABASE [zaposlenici] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [zaposlenici] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [zaposlenici] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [zaposlenici] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [zaposlenici] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [zaposlenici] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [zaposlenici] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [zaposlenici] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [zaposlenici] SET  DISABLE_BROKER 
+GO
+ALTER DATABASE [zaposlenici] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [zaposlenici] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [zaposlenici] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [zaposlenici] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [zaposlenici] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [zaposlenici] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [zaposlenici] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [zaposlenici] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [zaposlenici] SET  MULTI_USER 
+GO
+ALTER DATABASE [zaposlenici] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [zaposlenici] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [zaposlenici] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [zaposlenici] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [zaposlenici] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [zaposlenici] SET QUERY_STORE = OFF
+GO
+USE [zaposlenici]
+GO
+/****** Object:  Table [dbo].[odjeli]    Script Date: 20.3.2019. 11:55:58 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[odjeli](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[naziv] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_odjeli] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[sefovi]    Script Date: 20.3.2019. 11:55:58 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[sefovi](
+	[zaposlenik_id] [int] NOT NULL,
+	[odjel_id] [int] NOT NULL,
+ CONSTRAINT [PK_sefovi] PRIMARY KEY CLUSTERED 
+(
+	[zaposlenik_id] ASC,
+	[odjel_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[zaposlenici]    Script Date: 20.3.2019. 11:55:58 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[zaposlenici](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[ime] [nvarchar](50) NOT NULL,
+	[prezime] [nvarchar](50) NOT NULL,
+	[odjel_id] [int] NULL,
+ CONSTRAINT [PK_zaposlenici] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[sefovi]  WITH CHECK ADD  CONSTRAINT [FK_sefovi_odjeli] FOREIGN KEY([odjel_id])
+REFERENCES [dbo].[odjeli] ([id])
+GO
+ALTER TABLE [dbo].[sefovi] CHECK CONSTRAINT [FK_sefovi_odjeli]
+GO
+ALTER TABLE [dbo].[sefovi]  WITH CHECK ADD  CONSTRAINT [FK_sefovi_zaposlenici] FOREIGN KEY([zaposlenik_id])
+REFERENCES [dbo].[zaposlenici] ([id])
+GO
+ALTER TABLE [dbo].[sefovi] CHECK CONSTRAINT [FK_sefovi_zaposlenici]
+GO
+ALTER TABLE [dbo].[zaposlenici]  WITH CHECK ADD  CONSTRAINT [FK_zaposlenici_odjeli] FOREIGN KEY([odjel_id])
+REFERENCES [dbo].[odjeli] ([id])
+GO
+ALTER TABLE [dbo].[zaposlenici] CHECK CONSTRAINT [FK_zaposlenici_odjeli]
+GO
+USE [master]
+GO
+ALTER DATABASE [zaposlenici] SET  READ_WRITE 
+GO
